@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login and Sign Up</title>
+        <link rel="stylesheet" href="style4.css">
+    </head>
+    <bod>
+        <section>
+            <div class="container">
+                <div class="user loginpage">
+                    <div class="imgbox">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYsmIPICUmXEzCQK7gJSKIXWxKomHrIG1Sw&usqp=CAU">
+                    </div>
+                    <div class="formbox">
+                        <form>
+                            <h2>Student Login</h2>
+                            <input type="text" name="email" placeholder="Email" required>
+                            <input type="password" name="psw" placeholder="Password" id="psw" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]) .{8,12}" title="Must contain at least one number and one uppercase and lowercase letter,and at least 8 or 12 characters" required>
+                            <input type="submit" name="" value="Submit">
+                            <p class="signup">Don't have an account? <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="user signuppage">
+                    <div class="formbox">
+                        <form>
+                            <h2>Register</h2>
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="text" name="rollnumber" placeholder="Roll Number" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="password" name="psw" placeholder="Password" id="psw" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]) .{8,12}" title="Must contain at least one number and one uppercase and lowercase letter,and at least 8 or 12 characters"required>
+                            <input type="text" name="confirm password" placeholder="Confirm Password" id="pws" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]) .{8,12}" title="Must contain at least one number and one uppercase and lowercase letter,and at least 8 or 12 characters" required>
+                            <input type="submit" name="" value="Register" onclick="ValidateEmail(document.container)"/>
+                            <p class="signin">Do you have an account? <a href="#" onclick="toggleForm();">Login</a></p>
+                        </form>
+                    </div>
+                    <div class="imgbox">
+                        <img src="https://www.clipartkey.com/mpngs/m/65-651790_user-icon-login-logo.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script  src="app2.js">
+        </script>
+    </body>
+</html>
